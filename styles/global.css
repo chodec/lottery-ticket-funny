@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Roboto:wght@400;700&display=swap');
+
+:root {
+    /* BARVY Z PALETY */
+    --color-black: #000000;
+    --color-dark-gray: #444444;
+    --color-medium-gray: #696969;
+    --color-primary-yellow: #f1d217; /* Nejjasnější žlutá pro CTA/Akcent */
+    --color-secondary-yellow: #edb926; /* Tmavší žlutá/Zlatá pro Důraz */
+
+    /* PŘIŘAZENÍ K NAŠEMU TÉMATU */
+    --color-primary: var(--color-primary-yellow); /* Hlavní CTA a akcent */
+    --color-secondary: var(--color-medium-gray); /* Sekundární tlačítka */
+    --color-background: var(--color-dark-gray); /* Tmavé pozadí Hero sekce a recenzí */
+    --color-neutral: var(--color-black); /* Nejtmavší pro patku a dělící linky */
+    --color-light: var(--color-medium-gray); /* Světlejší šedá pro Sekci Výhod */
+    --color-text-light: #ffffff; /* Bílý text na tmavém pozadí */
+    --color-text-dark: var(--color-black); /* Tmavý text na světlém pozadí (Sekce Výhod) */
+    
+    --font-heading: 'Montserrat', sans-serif;
+    --font-body: 'Roboto', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-body);
+    line-height: 1.6;
+    background-color: var(--color-background);
+    color: var(--color-text-light);
+}
+
+a {
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.hero {
+    padding: 80px 50px;
+}
